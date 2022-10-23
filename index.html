@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>WBBB的个人主页</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery-3.6.1.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<video autoplay loop muted poster="imgs/background.jpg">
+    <source src="imgs/background.webm" type="video/webm">
+    <source src="imgs/background.mp4" type="video/mp4">
+</video>
+
+<div class="div-root">
+    <a href="javascript:void(0)" onclick="popQRCode()">
+        <img class="qr-code-button button" src="imgs/qrcode.png" title="微信二维码" alt="">
+    </a>
+    <a href="javascript:scrollToTop()">
+        <img class="back-to-top button" src="imgs/up.png" title="回到顶部" alt="">
+    </a>
+
+    <div class="div0">
+        <div class="div1" id="header">
+            <img id="profile" src="imgs/profile.jpg" alt="">
+            <div id="name">WBBB</div>
+            <div id="sign">Hello, World!</div>
+        </div>
+        <hr>
+        <div class="div1">
+            <h2>个人信息</h2>
+            <table>
+                <tr>
+                    <td>姓名：</td>
+                    <td>翁邦越</td>
+                    <td class="separator"></td>
+                    <td>性别：</td>
+                    <td>男</td>
+                </tr>
+                <tr>
+                    <td>年龄：</td>
+                    <td>20</td>
+                    <td class="separator"></td>
+                    <td>生日：</td>
+                    <td>2002-07-30</td>
+                </tr>
+                <tr>
+                    <td>地区：</td>
+                    <td>广东 汕头</td>
+                </tr>
+                <tr>
+                    <td>学校：</td>
+                    <td><a class="normal" href="https://www.szu.edu.cn" target="_blank">深圳大学</a></td>
+                    <td class="separator"></td>
+                    <td>专业：</td>
+                    <td>软件工程</td>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div class="div1">
+            <h2>获得荣誉</h2>
+            <ul>
+                <li>🏆 2006年美国时代周刊年度风云人物</li>
+                <li>🏆 2008年感动中国组委会特别大奖获得者</li>
+                <li class="delete">🏆 2012年世界末日幸存者</li>
+                <li>🏆 2019年年度地球卫士奖获得者</li>
+                <li>🏆 2022年奥林匹克杯获得者</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="div1">
+            <h2>联系方式</h2>
+            <table>
+                <tr>
+                    <td>手机号：</td>
+                    <td>15014326525</td>
+                </tr>
+                <tr>
+                    <td>QQ：</td>
+                    <td>1339523637</td>
+                </tr>
+                <tr>
+                    <td>微信号：</td>
+                    <td>WBBB0730</td>
+                </tr>
+                <tr>
+                    <td>邮箱：</td>
+                    <td>1339523637@qq.com</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div class="div1">
+            <h2>社交平台</h2>
+            <table>
+                <tr>
+                    <td class="nowrap">bilibili：</td>
+                    <td><a href="https://space.bilibili.com/201819254" target="_blank">--WBBB--的个人空间_哔哩哔哩_bilibili</a> </td>
+                </tr>
+                <tr>
+                    <td class="nowrap">Steam：</td>
+                    <td><a href="https://steamcommunity.com/profiles/76561199079135083/" target="_blank">Steam 社区 :: WBBB</a> </td>
+                </tr>
+                <tr>
+                    <td class="nowrap">抖音：</td>
+                    <td><a href="https://www.douyin.com/user/MS4wLjABAAAA6114mmuEoN8vEhUlV2iLwuWAJytY6bjgegyJK1gQf4k" target="_blank">WBBB 的主页 - 抖音</a> </td>
+                </tr>
+                <tr>
+                    <td class="nowrap">网易云：</td>
+                    <td><a href="https://music.163.com/#/user/home?id=293134215" target="_blank">--WBBB-- - 用户 - 网易云音乐</a> </td>
+                </tr>
+                <tr>
+                    <td class="nowrap">QQ音乐：</td>
+                    <td><a href="https://y.qq.com/n/ryqq/profile/like/song?uin=oKoiNK4AoiCi7z**" target="_blank">我的音乐 - QQ音乐-千万正版音乐海量无损曲库</a> </td>
+                </tr>
+                <tr>
+                    <td class="nowrap">QQ空间：</td>
+                    <td><a href="https://user.qzone.qq.com/1339523637/main" target="_blank">WBBB 的空间</a> </td>
+                </tr>
+                <tr>
+                    <td class="nowrap">洛谷：</td>
+                    <td><a href="https://www.luogu.com.cn/user/65278" target="_blank">WBBB、 的个人中心 - 洛谷 | 计算机科学教育新生态</a> </td>
+                </tr>
+                <tr>
+                    <td class="nowrap">CSDN：</td>
+                    <td><a href="https://blog.csdn.net/qq_42041870" target="_blank">_WBBB_ 的博客_CSDN博客-领域博主</a> </td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div id="message-board" class="div1">
+            <h2>留言板</h2>
+            <form action="http://wbbb1233.natapp1.cc/WBBB/receive.php" method="post" target="frame">
+                <input type="text" name="name" placeholder="你的名字" required>
+                <br><br>
+                <textarea name="content" placeholder="留言内容" required></textarea>
+                <br><br>
+                <input type="submit" value="留 言" onclick="refresh()">
+            </form>
+            <iframe name="frame"></iframe>
+            <div id="messages"></div>
+            <script>update();</script>
+        </div>
+    </div>
+</div>
+<div id="qrcode-overlay" onclick="closeQRCode()">
+    <img id="qr-code" src="imgs/qrcode.jpg" alt="">
+</div>
+<div id="success-overlay">
+    <p id="success">留 言 成 功 ~</p>
+</div>
+
+</body>
+</html>
